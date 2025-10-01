@@ -1,0 +1,53 @@
+{
+  "name": "swaragama-training-center",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Website resmi Swaragama Training Center - Pure Frontend Application",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "build:prod": "npm run build",
+    "build:vercel": "npm run build",
+    "test:build": "node test-build.js",
+    "test:vercel": "node test-vercel-build.js",
+    "clean": "rm -rf dist node_modules/.vite",
+    "deploy": "chmod +x scripts/deploy.sh && ./scripts/deploy.sh",
+    "analyze": "npm run build && npx vite-bundle-analyzer dist/assets/*.js",
+    "type-check": "tsc --noEmit --incremental false",
+    "check-deps": "npm outdated",
+    "update-deps": "npm update"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1",
+    "motion": "latest",
+    "recharts": "^2.8.0",
+    "sonner": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "tailwindcss": "^4.0.0",
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "swaragama",
+    "training",
+    "center",
+    "frontend",
+    "react",
+    "tailwind"
+  ],
+  "homepage": "https://swaragamatrainingcenter.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swaragama/website"
+  }
+}
